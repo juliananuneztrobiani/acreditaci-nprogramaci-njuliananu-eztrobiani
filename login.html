@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar · Administración Junetts</title>
+  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+  <img src="/img/logo.svg" alt="Logo Junetts">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="marco">
+    <header class="menu">
+      <a class="marca" href="../index.html"><span class="marca-icono"><img src="../img/logo.svg" alt=""></span>Junetts</a>
+      <nav aria-label="Principal"><a href="../index.html">Volver al sitio</a></nav>
+    </header>
+    <section class="banda"><h1>Administración</h1><p>Ingresá para leer las consultas recibidas.</p></section>
+    <main class="claro">
+      <section class="tarjeta login-caja" style="width:100%">
+        <div id="aviso" class="aviso mal oculto" role="alert"></div>
+        <form id="form-login" novalidate>
+          <div class="campo"><label for="usuario">Usuario</label><input id="usuario" type="text" autocomplete="username" required></div>
+          <div class="campo"><label for="password">Contraseña</label><input id="password" type="password" autocomplete="current-password" required></div>
+          <button class="boton" type="submit">Ingresar</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="../js/login.js"></script>
+</body>
+</html>

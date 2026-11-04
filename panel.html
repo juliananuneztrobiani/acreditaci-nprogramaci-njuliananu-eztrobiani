@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel · Administración Junetts</title>
+  <link rel="icon" href="../img/logo.svg" type="image/svg+xml">
+  <img src="/img/logo.svg" alt="Logo Junetts">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="marco">
+    <header class="menu">
+      <a class="marca" href="../index.html"><span class="marca-icono"><img src="../img/logo.svg" alt=""></span>Junetts</a>
+      <nav aria-label="Principal"><a href="../index.html">Ver sitio</a><button class="boton chico" id="btn-salir" type="button">Cerrar sesión</button></nav>
+    </header>
+    <section class="banda"><h1>Consultas recibidas</h1><p id="resumen">Cargando…</p></section>
+    <main class="claro">
+      <section class="tarjeta">
+        <form class="filtros" id="filtros">
+          <div class="campo"><label for="f-q">Buscar por nombre o email</label><input id="f-q" type="search"></div>
+          <div class="campo"><label for="f-estado">Estado</label>
+            <select id="f-estado" style="width:100%;font:inherit;padding:12px 14px;border-radius:10px;border:1.5px solid rgba(26,18,100,.3)">
+              <option value="">Todas</option><option value="noleida">No leídas</option><option value="leida">Leídas</option>
+            </select></div>
+          <div class="campo"><label for="f-fecha">Fecha</label><input id="f-fecha" type="date"></div>
+          <div class="campo"><button class="boton" type="button" id="btn-limpiar">Limpiar</button></div>
+        </form>
+        <div id="aviso" class="aviso mal oculto" role="alert"></div>
+        <div class="tabla-caja">
+          <table>
+            <thead><tr><th>Nombre</th><th>Email</th><th>Asunto</th><th>Fecha</th><th>Estado</th></tr></thead>
+            <tbody id="filas"></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="tarjeta oculto" id="detalle" aria-live="polite">
+        <h2 id="d-asunto"></h2>
+        <dl class="detalle">
+          <dt>De</dt><dd id="d-nombre"></dd>
+          <dt>Email</dt><dd id="d-email"></dd>
+          <dt>Teléfono</dt><dd id="d-telefono"></dd>
+          <dt>Fecha</dt><dd id="d-fecha"></dd>
+          <dt>Mensaje</dt><dd id="d-mensaje"></dd>
+        </dl>
+        <p style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <button class="boton" type="button" id="btn-leida"></button>
+          <button class="boton oscuro" type="button" id="btn-cerrar-detalle">Cerrar detalle</button>
+        </p>
+      </section>
+    </main>
+  </div>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

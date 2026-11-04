@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto · Junetts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="marco">
+        <header class="menu">
+            <a class="marca" href="index.html">
+                <span class="marca-icono">
+                    <img src="img/logo.svg" alt="Logo Junetts">
+                </span>
+                Junetts
+            </a>
+            <nav aria-label="Principal">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a class="boton-menu" href="contacto.html" aria-current="page">Contacto</a>
+            </nav>
+        </header>
+        <section class="banda">
+            <h1>Contanos qué necesitás</h1>
+            <p>Completá el formulario y te responderemos lo antes posible.</p>
+        </section>
+        <main class="claro">
+            <section class="tarjeta">
+                <div id="aviso" class="aviso oculto" role="status"></div>
+                <form id="form-contacto" novalidate>
+                    <div class="fila-2">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" type="text">
+                            <div class="error" data-error="nombre"></div>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email">
+                            <div class="error" data-error="email"></div>
+                        </div>
+                    </div>
+
+                    <div class="fila-2">
+                        <div class="campo">
+                            <label for="telefono">Teléfono (opcional)</label>
+                            <input id="telefono" name="telefono" type="tel">
+                            <div class="error" data-error="telefono"></div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="asunto">Asunto</label>
+                            <input id="asunto" name="asunto" type="text">
+                            <div class="error" data-error="asunto"></div>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                        <div class="error" data-error="mensaje"></div>
+                    </div>
+                    <button class="boton" type="submit" id="btn-enviar">
+                        Enviar consulta
+                    </button>
+
+                </form>
+            </section>
+        </main>
+        <footer class="pie">
+            <span>© 2026 Junetts · Tecnología simple con asistencia cercana.</span>
+            <a href="admin/login.html">Acceso administración</a>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 40 1340 940" role="img" aria-label="Logo de Junetts: mariposa mitad alas, mitad red">
+  <g fill="none" stroke="#0A1285" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ala superior izquierda -->
+    <path d="M165 147 C420 205 700 320 755 600 C600 545 380 470 165 147 Z" fill="#F1EDE6" stroke-width="30"/>
+    <!-- alas inferiores rosas -->
+    <path d="M740 598 C610 556 430 520 345 600 C305 645 335 695 400 685 C520 665 640 635 740 598 Z" fill="#EFBFE0" stroke-width="30"/>
+    <path d="M745 612 C650 700 545 770 495 810 C470 850 530 880 568 892 C640 805 700 710 745 612 Z" fill="#EFBFE0" stroke-width="30"/>
+    <!-- cuerpo y antenas -->
+    <path d="M790 330 L790 840" stroke-width="32"/>
+    <path d="M790 325 C790 270 700 250 652 213" stroke-width="22"/>
+    <path d="M790 325 C790 270 880 250 927 212" stroke-width="22"/>
+    <!-- ala derecha: red de puntos -->
+    <g stroke-width="14">
+      <path d="M815 555 L1058 305 L1398 157 L1378 320 L1278 474 L1173 577 L815 555"/>
+      <path d="M815 555 L1135 378 L1378 320"/>
+      <path d="M1135 378 L1278 474"/>
+      <path d="M1058 305 L1135 378"/>
+      <path d="M1398 157 L1135 378"/>
+      <path d="M815 555 L1278 474"/>
+      <path d="M815 555 L1134 675 L1196 802 L1050 928 L928 828 L815 555"/>
+      <path d="M1134 675 L1015 737 L928 828"/>
+      <path d="M1015 737 L1050 928"/>
+      <path d="M1015 737 L1196 802"/>
+    </g>
+  </g>
+  <g fill="#0A1285">
+    <circle cx="652" cy="213" r="22"/><circle cx="927" cy="212" r="22"/><circle cx="790" cy="325" r="22"/>
+    <circle cx="1398" cy="157" r="22"/><circle cx="1378" cy="320" r="20"/><circle cx="1278" cy="474" r="20"/>
+    <circle cx="1173" cy="577" r="20"/><circle cx="1134" cy="675" r="20"/><circle cx="1196" cy="802" r="20"/>
+    <circle cx="1050" cy="928" r="20"/><circle cx="928" cy="828" r="20"/><circle cx="1015" cy="737" r="20"/>
+    <circle cx="1135" cy="378" r="20"/><circle cx="1058" cy="305" r="20"/>
+    <!-- estrella -->
+    <path d="M790 60 C797 112 832 142 880 158 C832 174 802 200 790 256 C778 200 748 174 700 158 C748 142 783 112 790 60 Z"/>
+  </g>
+  <path d="M790 100 C794 130 812 146 836 158 C812 168 798 182 790 212 C782 182 768 168 744 158 C768 146 786 130 790 100 Z" fill="#EFBFE0"/>
+</svg>
